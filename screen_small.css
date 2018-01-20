@@ -1,0 +1,72 @@
+/*
+ * Styling for small screens
+ */
+@media ( max-width : 50em) {
+	/*
+	 * Box placements and sizes
+	 */
+	/* Row 1: dark blue box with logo … */
+	#header-box-1 {
+		grid-column: 1/span 1;
+		grid-row: 1/span 1;
+	}
+	/* … and Hamburger */
+	#menubutton {
+		grid-column: 2/span 1;
+		grid-row: 1/span 1;
+	}
+	#menubutton:before {
+		content: "☰";
+		font-size: 300%;
+	}
+	/* The red box is not displayed on small screens. */
+	#header-box-2 {
+		display: none;
+	}
+	/* The violet box is not displayed on small screens. */
+	#header-box-3 {
+		display: none;
+	}
+	/* Row 2: grey box with image */
+	#header-box-4 {
+		grid-column: 1/span 2;
+		grid-row: 2/span 1;
+	}
+	/* The blue box with text is not displayed on small screens. */
+	#header-box-5 {
+		display: none;
+	}
+	/* Row 3: contents */
+	#contents-box {
+		grid-column: 1/span 2;
+		grid-row: 3/span 1;
+	}
+	/*
+	 * The navigation box is visible only when the Hamburger it clicked. 
+	 */
+	#navigation-box {
+		grid-column: 1/span 2;
+		grid-row: 2/span 2;
+		z-index: 1;
+		margin-left: 51%;
+		width: 45%;
+		height: 100%;
+		visibility: hidden;
+		transition-property: visibility;
+		transition-delay: 0.2s;
+		opacity: 0;
+	}
+	#navigation-box a {
+		color: white;
+	}
+	/* Clicking on the Hamburger makes the menu appear: */
+	#menubutton:focus ~ #navigation-box {
+		background-color: #233d91; /* dark blue */
+		visibility: visible;
+		pointer-events: auto;
+		opacity: 0.75;
+	}
+	#menubutton:focus {
+		pointer-events: none;
+	}
+}

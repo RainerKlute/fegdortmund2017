@@ -1,0 +1,30 @@
+/* 
+ * Grid for small screens
+ * 
+ * The grid container essentially consists of a single column with three rows.
+ *
+ * - The first row contains the logo on the left-hand side and the Hamburger at
+ *   the right-hand side.
+ *
+ * - The second row contains an image.
+ *
+ * - The third row contains the actual contents.
+ *
+ * However, in order to be able to place the Hamburger icon at the top right,
+ * we add a small second column at the right-hand side. This distinction is only
+ * important for the first row, which contains the logo in the left cell and the
+ * Hamburger in the right one.
+ *
+ * The subsequent rows must span two columns.
+ */
+@media ( max-width : 50em) {
+	#grid-container {
+		display: grid;
+		grid-template-columns: 1fr 3em;
+		grid-template-rows: 6em 24em auto[contents];
+		grid-column-gap: 0px;
+		grid-row-gap: 1px;
+		align-items: stretch;
+		justify-items: stretch;
+	}
+}
