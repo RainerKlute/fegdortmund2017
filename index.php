@@ -1,77 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-<meta charset="UTF-8">
-<title>FeG Dortmund</title>
-</head>
-<body>
-	<div id="grid-container">
+<?php get_header(); ?>
 
-		<div id="menubutton" tabindex="0"></div>
+<?php
+if (have_posts ()) :
+	while (have_posts () ) :
+		the_post ();
+        get_template_part('content', get_post_format());
+	endwhile;
+endif;
+?>
 
-		<div id="navigation-box" class="navigation">
-			<p>
-				<a href="does_not_exist_yet.html">Über uns</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Angebote</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Vorschau Rückschau</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Mediendownload</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Kontakt</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Gästebuch</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Facebook</a>
-			</p>
-			<p>
-				<a href="does_not_exist_yet.html">Interne Links</a>
-			</p>
-		</div>
-		<div id="header-box-1"></div>
-		<div id="header-box-2"></div>
-		<div id="header-box-3"></div>
-		<div id="header-box-4">
-			<img alt="BN-800" src="<?php echo get_bloginfo('template_directory'); ?>/images/BN-800.jpg">
-		</div>
-		<div id="header-box-5">
-			<h2>Aktuell</h2>
-			<p>Heute 19.30 Uhr</p>
-			<p>Schulungsabend</p>
-			<p>Schutz vor Gewalt und Missbrauch</p>
-			<p>Mi, 25. Jan 2017, 17.00 – 19.00 Uhr</p>
-			<p>Offenes Pastorenbüro</p>
-			<p>So, 29. Jan 2017, 17.00 Uhr</p>
-			<p>Lighthouse</p>
-			<p>Der (etwas) andere Gottesdienst</p>
-		</div>
-		<div id="contents-box">
-			<p class="navigation">Start</p>
-			<h1>Herzlich willkommen!</h1>
-			<p>In der Freien evangelischen Gemeinde Dortmund kommen Menschen
-				mit unterschiedlichen Prägungen, Ansichten und kulturellen
-				Hintergründen zusammen. Was uns verbindet, ist der Wunsch, in
-				unserem Leben immer wieder die überraschende Liebe und Großzügigkeit
-				Gottes zu entdecken.</p>
-			<p>Diese Liebe Gottes, die wir durch Jesus Christus erfahren,
-				wollen wir miteinander und mit Menschen um uns herum teilen. Wir
-				erleben, wie Christus uns und unseren Alltag, unsere Beziehungen,
-				unsere Familien, unsere berufliche Arbeit verändert. Dabei ist nicht
-				Vollkommenheit das Ziel. Wir sind und bleiben Menschen mit Fehlern,
-				Ecken und Kanten. Deswegen legen wir Wert auf eine Kultur der
-				Annahme, nicht der Ansprüche. Wir wollen einander Raum geben zur
-				Entwicklung.</p>
-			<p>Herzlich willkommen – in der Freien evangelischen Gemeinde
-				Dortmund ist auch Platz für dich!</p>
-		</div>
-	</div>
-</body>
-</html>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
