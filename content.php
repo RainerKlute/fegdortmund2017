@@ -1,6 +1,11 @@
 <div id="header-box-4">
-	<img alt="BN-800"
-		src="<?php echo get_bloginfo('template_directory'); ?>/images/BN-800.jpg">
+	<?php
+				if (has_post_thumbnail ()) :
+					the_post_thumbnail ();
+				else :
+					?>
+<img alt="<?php the_title(); ?>" src="<?php echo get_bloginfo('template_directory'); ?>/images/default-image">
+<?php endif; ?>
 </div>
 <div id="header-box-5">
 	<h2>Aktuell</h2>
