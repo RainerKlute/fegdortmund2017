@@ -44,6 +44,12 @@ img {
 	color: #7F7AC5;
 }
 
+/* Remove bullets and indentation from "li" elements in the navigation menu: */
+.navigation, .navigation * {
+	list-style-type: none;
+	padding: 0;
+}
+
 /* Box colors: */
 #header-box-1 {
 	background-color: #233d91; /* dark blue */
