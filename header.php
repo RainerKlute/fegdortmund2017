@@ -24,11 +24,11 @@
         <div id="header-box-3"></div>
         <div id="navigation-box" class="navigation">
             <?php
-            wp_nav_menu ( array (
-                'theme_location' => 'navigation_menu_location',
-                'container' => false,
-                'before' => '<p>',
-                'after' => '</p>' 
-            ) );
+                wp_nav_menu ( array (
+                    'theme_location' => 'navigation_menu_location',
+                    'container' => false,
+                    'before' => '<p>',
+                    'after' => '</p>' 
+                ) );
             ?>
         </div>
