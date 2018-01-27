@@ -12,6 +12,19 @@ function register_my_menus() {
 add_action ( 'init', 'register_my_menus' );
 
 /*
+ * Enables support for custom header images.
+ */
+function enable_custom_header() {
+	add_theme_support ( 'custom-header', array (
+			'default-image' => get_template_directory_uri () . 'images/default-image',
+			'default-text-color' => '000',
+			'flex-width' => true,
+			'flex-height' => true 
+	) );
+}
+add_action ( 'after_setup_theme', 'enable_custom_header' );
+
+/*
  * Enables support for featured images.
  */
 function enable_featured_images() {

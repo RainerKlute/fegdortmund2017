@@ -4,7 +4,7 @@
             the_post_thumbnail ();
         else :
     ?>
-    <img alt="<?php the_title(); ?>" src="<?php echo get_bloginfo('template_directory'); ?>/images/default-image">
+    <img alt="<?php the_title(); ?>" src="<?php header_image(); ?>">
     <?php endif; ?>
 </div>
 <div id="header-box-5">
