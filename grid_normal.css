@@ -1,15 +1,15 @@
 /* Grid for normal and large screens: */
 @media ( min-width : 50em) {
-	#grid-container {
-		margin-top: 0px;
-		margin-left: 3%;
-		margin-right: 3%;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 7em 2em 20em auto;
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
-		align-items: stretch;
-		justify-items: stretch;
-	}
+    #grid-container {
+        margin-top: 0px;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 7em 2em 20em auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-items: stretch;
+        justify-items: stretch;
+    }
 }

@@ -18,13 +18,13 @@
  * The subsequent rows must span two columns.
  */
 @media ( max-width : 50em) {
-	#grid-container {
-		display: grid;
-		grid-template-columns: 1fr 3em;
-		grid-template-rows: 6em 24em auto[contents];
-		grid-column-gap: 0px;
-		grid-row-gap: 1px;
-		align-items: stretch;
-		justify-items: stretch;
-	}
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3em;
+        grid-template-rows: 6em 24em auto[contents];
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+        align-items: stretch;
+        justify-items: stretch;
+    }
 }
