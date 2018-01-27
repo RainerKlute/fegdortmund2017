@@ -73,6 +73,17 @@ img {
 #header-box-4 {
 	background-color: #ddd9d8; /* grey (well, almost) */
 	color: #ffffff;
+	position: relative;
+}
+
+/* Centers the featured image horizontally and vertically inside the grey header box, together with
+ * "position: relative" of #header-box-4.
+ */
+#header-box-4 img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #header-box-5 {
