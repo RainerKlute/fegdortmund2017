@@ -1,13 +1,12 @@
 /* Grid for normal and large screens: */
 @media ( min-width : 50em) {
     #grid-container {
-        height: 100%;
         margin-top: 2%;
         margin-left: 3%;
         margin-right: 3%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 7em 2em 15em auto;
+        grid-template-rows: 7em 2em 15em auto 2em;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         align-items: stretch;
