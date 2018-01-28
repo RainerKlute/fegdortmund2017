@@ -30,6 +30,7 @@
                     'before' => '<p>',
                     'after' => '</p>' 
                 ) );
+                get_search_form();
                 ?>
         </div>
         <div id="header-box-4">

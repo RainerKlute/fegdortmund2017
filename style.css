@@ -116,3 +116,26 @@ img {
     background-color: #233d91; /* dark blue */
     color: #ffffff;
 }
+
+/* Searching */
+
+.search-submit {
+    color: red;
+    background-color: white;
+    width: 2em;
+}
+
+/* Remove bullets and indentation from "li" elements in search results: */
+.search-result, .search-result * {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-result-title, .search-result-title * {
+    color: #233d91;
+    font-weight: bold;
+}
+
+.search-result-excerpt, .search-result-excerpt * {
+    padding-left: 1em;
+}

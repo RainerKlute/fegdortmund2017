@@ -8,8 +8,15 @@ function register_my_menus() {
 			'navigation_menu_location' => __ ( 'Navigation menu location' ) 
 	) );
 }
-
 add_action ( 'init', 'register_my_menus' );
+
+/*
+ * Adds HTML5 support.
+ */
+function enable_html5() {
+	add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'enable_html5' );
 
 /*
  * Enables support for custom header images.
