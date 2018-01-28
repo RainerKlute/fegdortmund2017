@@ -136,6 +136,10 @@ img {
     font-weight: bold;
 }
 
-.search-result-excerpt, .search-result-excerpt * {
+.search-result-excerpt, .search-result-excerpt *, .search-result-thumbnail, .search-result-thumbnail * {
     padding-left: 1em;
+}
+
+.search-result-thumbnail img {
+    max-width: 38.2%;
 }
