@@ -23,7 +23,9 @@ Tags: custom-header featured-image-header featured-images full-width-template gr
 
 @import "screen_small.css";
 
-body {
+html, body {
+    height: 100%;
+    margin: 0px;
     vertical-align: top;
     background-color: #ffffff;
     font-family: tahoma, arial, sans-serif;
